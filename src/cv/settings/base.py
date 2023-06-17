@@ -43,7 +43,7 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
-ROOT_URLCONF = "main.urls"
+ROOT_URLCONF = "cv.urls"
 
 TEMPLATES = [
     {
@@ -61,7 +61,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "main.wsgi.application"
+WSGI_APPLICATION = "cv.wsgi.application"
 
 
 # [Databases]
