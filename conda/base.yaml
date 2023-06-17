@@ -1,0 +1,8 @@
+name: cv
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python 3.*
+  - pip
+  - poetry
