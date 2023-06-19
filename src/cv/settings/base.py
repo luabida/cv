@@ -28,7 +28,7 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = ["django_extensions", "dr_scaffold"]
 
-LOCAL_APPS = []
+LOCAL_APPS = ["base"]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
@@ -126,7 +126,9 @@ USE_TZ = True
 STATIC_URL = "/static/"
 MEDIA_URL = "/images/"
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATICFILES_DIRS = [
+    (os.path.join(BASE_DIR, "static")),
+]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "static/images")
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
